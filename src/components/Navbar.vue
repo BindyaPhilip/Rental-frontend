@@ -1,44 +1,40 @@
 <template>
-  <body class="bg-gray-100 h-screen flex justify-center items-center">
-  
-  <!-- Login Card -->
-  <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-sm">
-    <h2 class="text-2xl font-bold text-center mb-6">Login</h2>
-
-    <form action="#">
-      <!-- Email Input -->
-      <div class="mb-4">
-        <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
-          Email
-        </label>
-        <input class="w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" 
-               type="email" id="email" placeholder="Enter your email">
+  <nav class="bg-green-700 border-b border-green-500">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="flex h-20 items-center justify-between">
+          <div
+            class="flex flex-1 items-center justify-center md:items-stretch md:justify-start"
+          >
+            <!-- Logo -->
+            <a class="flex flex-shrink-0 items-center mr-4" href="index.html">
+              <img class="h-10 w-auto" :src="logo" alt="Vue Jobs" />
+              <span class="hidden md:block text-white text-2xl font-bold ml-2"
+                >Vue Jobs</span
+              >
+            </a>
+            <div class="md:ml-auto">
+              <div class="flex space-x-2">
+                <a
+                  href="index.html"
+                  class="text-white bg-green-900 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
+                  >Home</a
+                >
+                <a
+                  href="jobs.html"
+                  class="text-white hover:bg-green-900 hover:text-white rounded-md px-3 py-2"
+                  >Jobs</a
+                >
+                <a
+                  href="add-job.html"
+                  class="text-white hover:bg-green-900 hover:text-white rounded-md px-3 py-2"
+                  >Add Job</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <!-- Password Input -->
-      <div class="mb-6">
-        <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
-          Password
-        </label>
-        <input class="w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" 
-               type="password" id="password" placeholder="Enter your password">
-      </div>
-
-      <!-- Submit Button -->
-      <div class="mb-4">
-        <button class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
-          Sign In
-        </button>
-      </div>
-
-      <!-- Forgot Password -->
-      <div class="text-center">
-        <a href="#" class="text-sm text-blue-500 hover:underline">Forgot password?</a>
-      </div>
-    </form>
-  </div>
-
-</body>
+    </nav>
 </template>
 
 <script setup>
